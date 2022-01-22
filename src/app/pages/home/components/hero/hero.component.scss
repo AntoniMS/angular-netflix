@@ -31,10 +31,15 @@
     }
 
     img {
+      border: solid 2px transparent;
       padding: 5px;
       width: 200px;
       z-index: 1;
       cursor: pointer;
+    }
+    img:hover {
+      border: solid 2px whitesmoke;
+
     }
   }
 }
