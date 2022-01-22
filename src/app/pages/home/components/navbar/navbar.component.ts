@@ -8,14 +8,14 @@ import { Navbar } from '../../models/Netflix';
 })
 export class NavbarComponent implements OnInit {
   @Input() public navbar!: Navbar
-  public btnText: string = "Modo Oscuro"
+  public btnText: string = "Modo Claro"
   constructor() { }
 
   ngOnInit(): void {
   }
 
   public setDarkTheme(): void {
-    document.body.classList.toggle('dark-theme');
-    this.btnText == 'Modo Oscuro' ? this.btnText = 'Modo Claro' : this.btnText = 'Modo Oscuro'
+    document.body.classList.toggle('light-theme');
+    this.btnText == 'Modo Claro' ? this.btnText = 'Modo Oscuro' : this.btnText = 'Modo Claro'
   }
 }

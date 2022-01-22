@@ -10,13 +10,14 @@ export class HomeComponent implements OnInit {
   public netFlix: NetFlix;
   public action: Film;
   public anime: Film;
+  public drama: Film;
   constructor() {
     this.netFlix = {
       navbar: {
         logo: {
-          src: "../../../assets/images/LOGO/logo_netflix_corto.jpg",
+          src: "../../../assets/images/LOGO/logo.png",
           alt: "NetFlix Logo"
-        }
+        },
       },
       hero: {
         title: "Los 5 más populares hoy",
@@ -94,7 +95,32 @@ export class HomeComponent implements OnInit {
           alt: "NinoKuni"
         }
       ]
-    }
+    };
+    this.drama = {
+      title: "Drama",
+      imgGallery: [
+        {
+          src: "../../../assets/images/Drama/millaverde.webp",
+          alt: "milla verde"
+        },
+        {
+          src: "../../../assets/images/Drama/clublucha.webp",
+          alt: "el club de la lucha"
+        },
+        {
+          src: "../../../assets/images/Drama/salvaralsoldado.webp",
+          alt: "salvar al soldado ryan"
+        },
+        {
+          src: "../../../assets/images/Drama/naufrago.webp",
+          alt: "naufrago"
+        },
+        {
+          src: "../../../assets/images/Drama/1917.webp",
+          alt: "1917"
+        }
+      ]
+    };
   }
 
   ngOnInit(): void {

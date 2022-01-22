@@ -1,17 +1,28 @@
 .film {
-    margin-left: 10px;
-  
-    h2 {
-      padding: 6px;
-    }
-  
-    .film-gallery {
-      display: flex;
-      flex-direction: row;
-      img {
-        padding: 5px;
-        width: 300px;
-      }
-    }
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  padding: 6px;
+}
+
+.film-gallery {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  img {
+    padding: 5px;
+    width: 296px;
+    border: 4px solid rgba(245, 245, 245, 0);
   }
-  
+  img:hover {
+    width: 296px;
+    border: 4px solid whitesmoke;
+    cursor: pointer;
+  }
+}

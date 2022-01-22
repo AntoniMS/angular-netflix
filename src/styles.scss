@@ -3,15 +3,15 @@
 //VARIABLES - PALETTE
 body {
   font-family: "Roboto", sans-serif;
-  --text-color: rgb(31, 31, 31);
-  --background: rgb(218, 216, 216);
-  --stroke: rgba(129, 129, 129, 0.88);
-}
-
-body.dark-theme {
   --text-color: whitesmoke;
   --background: #1f1f1f;
-  --stroke: #c50d1a;
+  --stroke:  #b1b1b1;
+}
+
+body.light-theme {
+  --text-color: rgb(165, 25, 25);
+  --background: rgb(218, 216, 216);
+  --stroke: rgba(8, 8, 8, 0.88);
 }
 //GLOBAL STYLES
 * {
