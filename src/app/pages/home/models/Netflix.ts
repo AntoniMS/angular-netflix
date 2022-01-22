@@ -1,25 +1,19 @@
- export interface Netflix {
-    nav: Navbar,
-    hero: Hero,
-    film: Film,
-} 
-
-export interface Navbar {
-    title:string;
-    logo: Image;
+export interface NetFlix {
+    navbar: Navbar;
+    hero: Film;
 }
 
-export interface Hero {
-    title: string;
-    imgGallery: Image []
+export interface Navbar {
+    logo: Image;
 }
 
 export interface Film {
     title: string;
-    imgGallery: Image []
+    imgGallery: Image[]
 }
 
 export interface Image {
     src: string;
-    alt:string;
+    alt: string;
 }
+

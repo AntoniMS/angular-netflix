@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Navbar } from '../../models/Netflix';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
+  @Input() public navbar!: Navbar
+  public btnText: string = "Modo Oscuro"
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  public setDarkTheme(): void {
+    document.body.classList.toggle('dark-theme');
+    this.btnText == 'Modo Oscuro' ? this.btnText = 'Modo Claro' : this.btnText = 'Modo Oscuro'
+  }
 }
